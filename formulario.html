@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formularios</title>
+</head>
+<body>
+        <!--action=endpoint 
+        METHOD:
+        POST - Enviamos a guardar informacion o un form contacto
+        GET - Solicitamos informacion, traer datos
+        REQUEST:
+        direccion
+        genero
+        idioma
+        email
+        
+        -->
+    <form action="htpps://www.ejemplo.com/contacto" method="post">
+        <label for="direccion">Direccion</label>
+        <input type="text" name="direccion" id="direccion" placeholder="Aqui direccion de su casa">
+        <br>
+        <label for="edad">Edad</label>
+        <input name="edad" id="edad" min="5" max="10" value="18">
+        <br>
+        <label for="email">Email</label>
+        <input name="email" id="email" placeholder="">
+        <br>
+        <label for="genero">Genero</label>
+        <input name="genero" id="genero-masculino" type="radio" value="f"/>
+        <label for="genero-masculino">M</label>
+        <input name="genero" id="genero-masculino" type="radio" value="m"/>
+        <label for="genero-femenino">F</label>
+        <br>
+
+        <label for="idiomas">Idiomas</label>
+        <input name="idiomas" id="idiomas-ingles" type="checkbox" value="f" checked/>
+        <label for="idiomas-ingles">Ingles</label>
+        <input name="idiomas" id="idiomas-frances" type="checkbox" value="m"/>
+        <label for="idiomas-frances">Frances</label>
+
+        <br>
+        <button type="submit">ENVIAR</button>
+        <br>
+        <input type="file">
+        <select name="" id="">
+            <option value="">Lima</option>
+        </select>
+        <select name="" id="">
+            <option value="">Arequipa</option>
+        </select>
+    </form>
+</body>
+</html>
